@@ -41,7 +41,7 @@ const Form = styled(Box)`
       input {
           width: 100%;
           &:not(:last-child){
-              margin-bottom: 7px;
+              margin-top: 7px;
           }
       }
       button {

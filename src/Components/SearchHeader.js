@@ -4,6 +4,7 @@ import Input from "../Components/Input";
 import useInput from "../Components/Hooks/useInput"
 import { withRouter } from "react-router";
 import TagBtn from "./Tag";
+import loupe from "../../src/img/loupe.png"
 
 const Wrapper = styled.div`
   width:100%;
@@ -66,7 +67,7 @@ const SearchButton = styled.button`
     border:0;
     outline:0;
     background-color: transparent;
-    background-image: url(/static/media/loupe.49d129eb.svg);
+    background-image: url(${loupe});
     background-repeat: no-repeat;
     background-position: center;
     top: 76px;
