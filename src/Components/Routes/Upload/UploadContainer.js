@@ -66,6 +66,7 @@ export default () => {
        toast.error("Can't upload");
      } finally {
        setIsLoading(false);
+       window.location.reload();
      }
    }
       return (

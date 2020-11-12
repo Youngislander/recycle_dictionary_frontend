@@ -4,8 +4,9 @@ import useInput from "../../Hooks/useInput";
 import { useMutation } from "react-apollo-hooks";
 import { LOG_IN, CREATE_ACCOUNT, CONFIRM_SECRET, LOCAL_LOG_IN } from "./AuthQueries";
 import { toast } from "react-toastify";
+import { withRouter } from "react-router";
 
-export default () => {
+export default withRouter(({history, location}) => {
     const [action, setAction] = useState("logIn");
     const username = useInput("");
     const firstName = useInput("");
@@ -93,7 +94,10 @@ export default () => {
                    }
                 } catch {
                     toast.error("Cant confirm secret, check again");
-                } 
+                } finally{
+                    history.push("/");
+                    window.location.reload();
+                }
            }
        }
    };
@@ -110,4 +114,5 @@ return (
       onSubmit={onSubmit}
     />
   );
-}; 
+} 
+)

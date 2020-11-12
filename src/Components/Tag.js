@@ -4,22 +4,23 @@ import {Link} from "react-router-dom";
 import { searchLogo } from "./Icons";
 
 const TagWrapper = styled.div`
-width: 100%;
-padding: 0px 0px 50px;
-text-align: left;
-margin: 0 auto;
-    `;
+    width: 100%;
+    padding: 0px 0px 50px;
+    text-align: left;
+    margin: 0 auto;
+`;
 
 const Tag = styled.span`
-display: inline-block;
-text-align: left;
-font-size: 12px;
-font-weight: 600;
-border-radius: 20px;
-border: 2px solid #4dff8c;
-padding: 8px 10px;
-box-sizing: border-box;
-color: #4dff8c;
+    display: inline-block;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 2px solid #4dff8c;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    color: #4dff8c;
+    margin-bottom: 10px;
 `
 const DeleteBtn = styled.span`
     display: inline-block;

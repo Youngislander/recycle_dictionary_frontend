@@ -144,8 +144,8 @@ export default withRouter(({ loading, data, logOut, history, location} ) => {
     }
     function logOut(){
       localStorage.removeItem("token");
+      window.location.reload();
       history.push("/login");
-      location.reload();
     }
     return (
       <Wrapper>
