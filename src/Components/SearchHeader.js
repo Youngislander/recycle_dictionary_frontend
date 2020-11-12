@@ -71,10 +71,11 @@ const SearchButton = styled.button`
     background-repeat: no-repeat;
     background-position: center;
     top: 76px;
-    right: 0;
-    width: 22px;
-    height: 25px;
-    cursor:pointer;
+    right: 0px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    background-size: 90%;
 `
 const TagWrapper = styled.div`
     width:100%;
