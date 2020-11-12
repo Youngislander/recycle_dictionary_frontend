@@ -1,0 +1,88 @@
+
+@media screen and (max-width: 622px){
+    .postSection{
+        margin: 0 auto;
+        width:300px;
+       }
+}
+@media screen and (min-width: 622px){
+    .postSection{
+      margin: 0 auto;
+      width:600px;
+     }
+
+    }
+
+@media screen and (min-width: 1002px){
+.postSection{
+  margin: 0 auto;
+  width:900px;
+ }
+}
+
+
+.bg{
+    position: absolute;
+    width:100%;
+    background-image: url(../img/bg.jpg);
+    background-size:100%;
+    height:100vh;
+    top: -217px;
+    z-index: -1;
+}
+.page-container {
+    position: relative;
+    perspective: 1000px;
+    margin: 0 auto;
+    width: 260px;
+    height: 439px;
+    margin:20px;
+    float: left;
+}
+.card-container {
+    position: relative;
+    transform-style: preserve-3d;
+    box-sizing: border-box;
+    width: 280px;
+    height: 439px;
+}
+
+.card-container.flipped .front{
+    position: absolute;
+    top:0;
+    left:0;
+    transform: rotateY(180deg);
+}
+
+.card-container.flipped .back {
+    position: absolute;
+    top:0;
+    left:0;
+    transform: rotateY(0deg);
+}
+
+.front,.back {
+    position: absolute;
+    top:0;
+    left:0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: -webkit-transform ease 500ms;
+    transition: transform ease 500ms;
+}
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    /* front tile styles go here! */
+}
+.back {
+    transform: rotateY(-180deg);
+    /* back tile styles go here! */
+}
+@media screen and (max-width: 835px){
+    input{
+        
+    margin-top: -25px;
+
+    }
+}
