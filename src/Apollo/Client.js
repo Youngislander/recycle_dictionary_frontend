@@ -2,7 +2,7 @@ import ApolloClient from "apollo-boost";
 import { defaults, resolvers } from "./LocalState";
 
 export default new ApolloClient({
-    uri: "http://localhost:4000",
+    uri: "https://ecodictionarydb-39a06133be.herokuapp.com",
     clientState: {
         defaults,
         resolvers
