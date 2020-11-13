@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Post = styled.div`
   position:relative
   ${props => props.theme.whiteBox};
-  background: linear-gradient(to bottom,#79ffa3,#82b795,#e0ede9);
+  background: linear-gradient(rgb(121, 255, 163), rgb(208 255 225), rgb(255 255 255));
   box-shadow: 0 0 10px 3px #424c4585;
   border-radius:20px;
   padding:20px;
