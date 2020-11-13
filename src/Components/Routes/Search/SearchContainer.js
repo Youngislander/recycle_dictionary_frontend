@@ -29,25 +29,25 @@ const SEARCH_QUERY = gql`
 `;
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
+//   display: flex;
+//   flex-direction: column;
   align-items: center;
   min-height: 80vh;
 `;
 
-const Section = styled.div`
-  margin-bottom: 50px;
-  display: grid;
-  grid-gap: 45px;
-  grid-template-columns: repeat(4, 160px);
-  grid-template-rows: 160px;
-  grid-auto-rows: 160px;
-`;
+// const Section = styled.div`
+//   margin-bottom: 50px;
+//   display: grid;
+//   grid-gap: 45px;
+//   grid-template-columns: repeat(4, 160px);
+//   grid-template-rows: 160px;
+//   grid-auto-rows: 160px;
+// `;
 
-const PostSection = styled(Section)`
-  grid-template-columns: repeat(3,242px);
-  grid-template-rows: 460px;
-  grid-auto-rows: 245px;
+const PostSection = styled.div`
+margin-bottom: 50px;
+margin: 0 auto;
+width:69vw;
 `;
 
 export default ({location}) => {
@@ -61,7 +61,7 @@ export default ({location}) => {
               <title>Search: {term} | Eco dictionary</title>
           </Helmet>
             {loading && <Loader />}
-            <PostSection>  
+            <div class="postSection"> 
             {!loading &&
               data &&
               data.searchPost &&
@@ -80,7 +80,7 @@ export default ({location}) => {
                   />
                   </>
               ))}
-            </PostSection>
+              </div>
         </Wrapper>
     )
 }
